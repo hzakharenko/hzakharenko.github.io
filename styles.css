@@ -1,4 +1,73 @@
 h1{
-    font-size: 36px;
-    color: blue;
+    font-family: 'Montserrat', sans-serif;
 }
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p.text{
+    font-family: 'Playfair Display', serif;
+}
+li{
+    font-family: 'Playfair Display', serif;
+}
+
+#color-palette{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+div.color-1{
+    background-color: #1C0029;
+    color: white;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+div.color-2{
+    background-color: #D2C6CD;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+div.color-3{
+    background-color: #E0E0E0;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+div.color-4{
+    background-color: #119FA6;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+div.color-5{
+    background-color: #EE6352;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+
+img{
+    margin: 15px;
+}
+/* FONT FAMILIES: font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
