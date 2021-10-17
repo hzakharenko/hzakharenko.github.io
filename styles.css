@@ -69,5 +69,97 @@ div.color-5{
 img{
     margin: 15px;
 }
+
+/* BANNER DESIGN */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C0029;
+    width: 100%;
+    height: 150px;
+}
+#nav-text a {
+    color: #1C0029;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D2C6CD;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    height: 10px;
+}
+
+#nav-text a:hover {
+    background-color: #EE6352;
+}
+
+#nav-menu {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#nav-text {
+    display: flex;
+    align-self: center;
+}
+.logo div{
+    justify-content: flex-start;
+}
+.title{
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+#logo-img {
+    display: flex;
+    justify-content: flex-start;
+}
+/*FRONT PAGE DESIGN*/
+
+.home{
+    margin: 15px;
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 500px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.column-1 {
+    height: 100px;
+}
+.column-1 img{
+    width: 450px;
+}
+.column-2 {
+    height: 100;
+}
+#name {
+    font-size: 75px;
+    background-color: #D2C6CD;
+    width: 500px;
+}
+body{
+    background-color: #E0E0E0;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ #black-link{
+    color: black;
+}
+#tagline{
+    background-color: #EE6352;
+}
+
 /* FONT FAMILIES: font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
