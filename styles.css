@@ -54,12 +54,13 @@ img{
 }
 
 /* BANNER DESIGN */
+@media only screen and (min-width: 616px) {
 .banner {
     display: flex;
     justify-content: space-between;
     background-color: #1C0029;
     width: 100%;
-    height: 150px;
+    height: 20vh;
     padding-top: 15px;
 }
 #nav-text a {
@@ -70,7 +71,9 @@ img{
     text-decoration: none;
     height: 10px;
 }
-
+a{
+    color: #1C0029;
+}
 #nav-text a:hover {
     background-color: #EE6352;
 }
@@ -85,6 +88,7 @@ justify-content: center;
     align-self: center;
 }
 .logo div{
+    width: 50px;
     justify-content: flex-start;
 }
 .title{
@@ -97,48 +101,149 @@ justify-content: center;
     display: flex;
     justify-content: flex-start;
 }
-/*FRONT PAGE DESIGN*/
+}
+@media only screen and (max-width: 615px) {
+    .banner {
+        float: none;
+        justify-content: space-around;
+        background-color: #1C0029;
+        width: 100%;
+        height: 20vh;
+        display: block;
+        text-align: left;
+        padding-top:0px;
+    }
+    #nav-text a {
+        color: #1C0029;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #D2C6CD;
+        padding: 1em 1.5em;
+        text-decoration: none;
+        height: 10px;
+    }
+    a{
+        color: #1C0029;
+    }
+    #nav-text a:hover {
+        background-color: #EE6352;
+    }
 
-.home{
-    margin: 15px;
-    background-color: #E0E0E0;
-    width: 100%;
-    height: 500px;
-}
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.column {
+    #nav-menu {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    justify-content: center;
+    }
+    #nav-text {
+        display: flex;
+        align-self: center;
+    }
+    .title{
+        color: #E0E0E0;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+    }
+    #logo-img {
+        display: flex;
+        justify-content: flex-start;
+        width: 0px;
+    }
 }
-.column-1 {
-    height: 100px;
+/*FRONT PAGE DESIGN*/
+@media only screen and (min-width: 941px) {
+    .home-banner{
+        margin: 15px;
+        background-color: #E0E0E0;
+        width: 100%;
+        height: 500px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    .column-1 {
+        height: 20vh;
+        padding-bottom: 50px;
+    }
+    .column-1 img{
+        width: 450px;
+        padding-bottom: 50px;
+    }
+    .column-2 {
+        height: 100;
+        width: 450px;
+        padding-bottom: 50px;
+    }
+    #name {
+        font-size: 75px;
+        background-color: #D2C6CD;
+        width: 500px;
+    }
+    .home-text{
+        padding-top: 200px;
+        margin: auto;
+        width: 70%;
 }
-.column-1 img{
-    width: 450px;
 }
-.column-2 {
-    height: 100;
-    width: 450px;
-}
+@media only screen and (max-width: 940px) {
+    .home-banner{
+        margin: auto;
+        width: 100%;
+        height: auto;
+
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .column-1 img{
+        width: 100%;
+        float: left;
+        padding-bottom: 15px;
+    }
+    .column-2 {
+        width: 50%;
+        float:none;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        font-size: auto;
+    }
 #name {
-    font-size: 75px;
     background-color: #D2C6CD;
-    width: 500px;
+    width: 175%;
 }
+.home-text{
+    padding-top: 10px;
+    margin: auto;
+    width: 70%;
+}
+}
+
 body{
     background-color: #E0E0E0;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
-
  #black-link{
     color: black;
 }
@@ -153,8 +258,13 @@ body{
     color: #EE6352;
 }
 
+footer {
+    font-family: 'Playfair Display', serif;
+    padding-top: 50px;
+    font-size: 50%;
+}
 
-/*RESUME */
+/*PORTFOLIO */
 .heading-highlight {
     background-color: #119FA6;
 }
@@ -176,6 +286,63 @@ body{
 }
 
 
+/*RESUME*/
+.resume {
+    margin: auto;
+    max-width: 500px;
+    padding-left: 175px;
+    padding-right: 25px;
+    background-color: #D2C6CD;
+}
+.page-jumps {
+    padding: 10px;
+    margin: 10px;
+    color: #1C0029;
+}
 
+.column-resume {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+
+}
+
+
+/*CONTACT ME */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #D2C6CD;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #119FA6;
+  color: #1C0029;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #EE6352;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 20px;
+  background-color: #E0E0E0;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;
+}
 /* FONT FAMILIES: font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
