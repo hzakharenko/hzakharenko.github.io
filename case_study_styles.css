@@ -285,3 +285,10 @@ footer {
     margin-left: 300px;
     margin-right: 300px;
 }
+
+#video-walkthrough {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
