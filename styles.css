@@ -1,6 +1,10 @@
 /*BASICS*/
-h1, h2, h3, h4, h5, h6{
+h1, h2, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 p.text{
     font-family: 'Playfair Display', serif;
@@ -49,6 +53,14 @@ div.color-5{
 
 img{
     margin: 15px;
+}
+
+.portfoliocontainer {
+    padding-left: 200px;
+}
+
+#boldme {
+    font-weight: bold;
 }
 
 /* BANNER DESIGN */
