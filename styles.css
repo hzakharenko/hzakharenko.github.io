@@ -63,6 +63,10 @@ img{
     font-weight: bold;
 }
 
+#blend {
+    mix-blend-mode: multiply;
+}
+
 /* BANNER DESIGN */
 @media only screen and (min-width: 616px) {
 .banner {
