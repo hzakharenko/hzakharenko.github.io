@@ -1,362 +1,119 @@
-/*BASICS*/
-h1, h2, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
-}
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-}
-p.text{
-    font-family: 'Playfair Display', serif;
-}
-li{
-    font-family: 'Playfair Display', serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    background-color: #EBF7BC;
+    color: #333;
 }
 
-#color-palette{
-    background-color: white;
-    border: 2px solid black;
-    padding: 10px;
+
+header {
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-div.color-1{
-    background-color: #1C0029;
-    color: white;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-}
-div.color-2{
-    background-color: #D2C6CD;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-}
-div.color-3{
-    background-color: #E0E0E0;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-}
-div.color-4{
-    background-color: #119FA6;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-}
-div.color-5{
-    background-color: #EE6352;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
+a {
+    color: #EF6E39;
 }
 
-img{
-    margin: 15px;
+header h1 {
+    font-size: 4.5em;
+    color: #4069F8;
 }
 
-.portfoliocontainer {
-    padding-left: 200px;
+header h2 {
+    font-size: 2.2em;
+    color: #000;
 }
 
-#boldme {
-    font-weight: bold;
+p {
+    font-size: 1.5em;
+    color: #000;  
 }
 
-#blend {
-    mix-blend-mode: multiply;
-}
-
-/* BANNER DESIGN */
-@media only screen and (min-width: 616px) {
-.banner {
+.flex-wrapper {
     display: flex;
-    justify-content: space-between;
-    background-color: #1C0029;
-    width: 100%;
-    height: 20vh;
-    padding-top: 15px;
-}
-#nav-text a {
-    color: #1C0029;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #D2C6CD;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    height: 10px;
-}
-a{
-    color: #1C0029;
-}
-#nav-text a:hover {
-    background-color: #EE6352;
-}
-
-#nav-menu {
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-#nav-text {
-    display: flex;
-    align-self: center;
-}
-.logo div{
-    width: 50px;
-    justify-content: flex-start;
-}
-.title{
-    color: #E0E0E0;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-#logo-img {
-    display: flex;
-    justify-content: flex-start;
-}
-}
-@media only screen and (max-width: 615px) {
-    .banner {
-        float: none;
-        justify-content: space-around;
-        background-color: #1C0029;
-        width: 100%;
-        height: 20vh;
-        display: block;
-        text-align: left;
-        padding-top:0px;
-    }
-    #nav-text a {
-        color: #1C0029;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #D2C6CD;
-        padding: 1em 1.5em;
-        text-decoration: none;
-        height: 10px;
-    }
-    a{
-        color: #1C0029;
-    }
-    #nav-text a:hover {
-        background-color: #EE6352;
-    }
-
-    #nav-menu {
-    display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    }
-    #nav-text {
-        display: flex;
-        align-self: center;
-    }
-    .title{
-        color: #E0E0E0;
-        display: flex;
-        justify-content: center;
-        font-size: 35px;
-    }
-    #logo-img {
-        display: flex;
-        justify-content: flex-start;
-        width: 0px;
-    }
-}
-/*FRONT PAGE DESIGN*/
-@media only screen and (min-width: 941px) {
-    .home-banner{
-        margin: 15px;
-        background-color: #E0E0E0;
-        width: 100%;
-        height: 500px;
-    }
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .column {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-    }
-    .column-1 {
-        height: 20vh;
-        padding-bottom: 50px;
-    }
-    .column-1 img{
-        width: 450px;
-        padding-bottom: 50px;
-    }
-    .column-2 {
-        height: 100px;
-        width: 450px;
-        padding-bottom: 50px;
-    }
-    #name {
-        font-size: 75px;
-        background-color: #D2C6CD;
-        width: 500px;
-    }
-    .home-text{
-        padding-top: 200px;
-        margin: auto;
-        width: 70%;
-}
-}
-@media only screen and (max-width: 940px) {
-    .home-banner{
-        margin: auto;
-        width: 100%;
-        height: auto;
-
-    }
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .column {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .column-1 img{
-        width: 100%;
-        float: left;
-        padding-bottom: 15px;
-    }
-    .column-2 {
-        width: 50%;
-        float:none;
-        padding-left: 50px;
-        padding-bottom: 10px;
-        font-size: 100%;
-    }
-#name {
-    background-color: #D2C6CD;
-    width: 175%;
-}
-.home-text{
-    padding-top: 10px;
-    margin: auto;
-    width: 70%;
-}
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 20px;
 }
 
-body{
-    background-color: #E0E0E0;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+.footer {
+    margin-top: auto;
+    font-size: 1em;
+    color: #000;
+  }
+
+
+.social-media {
+    margin-top: 20px;
 }
- #black-link{
-    color: black;
-}
-#tagline{
-    background-color: #EE6352;
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 .social-icons{
-    color: #E0E0E0;
+    color: #000;
+    font-size: 2em; /* Adjust this value as needed */
 }
 .social-icons a:hover{
-    color: #EE6352;
+    color: #EF6E39;
 }
 
-footer {
-    font-family: 'Playfair Display', serif;
-    padding-top: 50px;
-    font-size: 50%;
-}
-
-/*PORTFOLIO */
-.heading-highlight {
-    background-color: #119FA6;
-}
-
-.img_wrapper{
-    width: 300px;
-    float: left;
-    margin-left: 50px;
-}
-
-.column-2-portfolio {
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.text-wrapper {
-    padding-top: 5px;
+.fa-solid.fa-turn-down {
+    font-size: 2em; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
 }
 
 
-/*RESUME*/
-.resume {
-    margin: auto;
-    max-width: 500px;
-    padding-left: 175px;
-    padding-right: 25px;
-    background-color: #D2C6CD;
-}
-.page-jumps {
-    padding: 10px;
-    margin: 10px;
-    color: #1C0029;
+.sticker {
+    position: absolute;
+    top: 20px; /* Adjust position as needed */
+    right: 20px; /* Adjust position as needed */
 }
 
-.column-resume {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
+.sticker img {
+    width: 150px; /* Adjust size as needed */
+}
 
+.arrow {
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 40px; /* Adjust size as needed */
 }
 
 
-/*CONTACT ME */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 15px;
-  border: 2px solid #D2C6CD;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  resize: vertical;
-}
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #119FA6;
-  color: #1C0029;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+        padding-right: 100px;
+    }
+    header h2 {
+        font-size: 1.3em;
+    }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #EE6352;
-}
+    p {
+        font-size: 0.9em;
+    }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 20px;
-  background-color: #E0E0E0;
-  padding: 10px;
-  font-family: 'Playfair Display', serif;
+    .social-icons {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: 0.7em;
+    }
+
+    .sticker img {
+        width: 80px; /* Adjust size as needed */
+    }
+    .arrow {
+        height: 25px; /* Adjust size as needed */
+    }
 }
-/* FONT FAMILIES: font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif; */
